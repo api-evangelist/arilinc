@@ -1,8 +1,29 @@
 aid: arilinc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arilinc.png
 name: Arilinc
-description: Arilinc is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Aril Inc. (Arilinc) is a fabless semiconductor company in Los Gatos, California
+  designing efficient AI processors and memory technology for edge inference. Its two
+  core products are the Aril Standard Cell Memory, a patented on-chip memory offering
+  roughly 40% lower active power and 3.6x smaller area, and a scalable RISC-V-based AI
+  Processor Engine delivering hundreds of TOPS of inference per block with integrated
+  vector and matrix engines. The company targets robotics, industrial automation,
+  drones, defense and aerospace, autonomous vehicles, and edge vision systems where
+  power efficiency is critical. Founded by a team of engineers who have collectively
+  shipped 20M+ processors and worked on silicon for Cisco, Intel, AMD, and Google.
+  Arilinc sells custom silicon and IP to hardware makers rather than a public developer
+  API; it publishes no API, SDK, developer portal, or programmatic surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/arilinc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +33,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Semiconductors
+- AI Processors
+- RISC-V
+- Memory
+- Edge Computing
+- AI Inference
+- Hardware
+common:
+- type: DomainSecurity
+  url: security/arilinc-domain-security.yml
+- url: https://arilinc.com
+  type: Website
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
